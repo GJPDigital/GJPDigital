@@ -432,4 +432,9 @@ footer p{
 .contact-form textarea{
     resize:vertical;
     min-height:180px;
+}.logo img{
+    height:80px;
+    width:auto;
+    display:block;
+    transition:transform .3s ease;
 }
