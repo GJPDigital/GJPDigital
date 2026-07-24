@@ -60,30 +60,27 @@ nav{
     display:flex;
     justify-content:space-between;
     align-items:center;
-    padding:22px 0;
+    padding:28px 0;      /* was 22px */
 }
 
-.logo{
-    font-family:"Cormorant Garamond",serif;
-    font-size:2rem;
-    color:var(--primary);
-    font-weight:700;
-}
-
-.logo span{
-    font-weight:400;
+.logo img{
+    height:82px;         /* adjust between 78-86px if needed */
+    width:auto;
+    display:block;
 }
 
 .nav-links{
     display:flex;
     list-style:none;
-    gap:40px;
+    gap:34px;            /* was 40px */
 }
 
 .nav-links a{
     color:var(--text);
-    font-weight:500;
-    transition:.3s;
+    font-weight:600;
+    font-size:1.05rem;
+    letter-spacing:0.2px;
+    transition:all .3s ease;
 }
 
 .nav-links a:hover{
@@ -93,8 +90,10 @@ nav{
 .nav-button{
     background:var(--primary);
     color:white;
-    padding:14px 28px;
+    padding:16px 32px;
     border-radius:10px;
+    font-size:1rem;
+    font-weight:600;
     transition:.3s;
 }
 
@@ -182,26 +181,22 @@ nav{
    PLACEHOLDER IMAGE
 ========================= */
 
+
 .image-placeholder{
-    background:white;
     border:1px solid var(--border);
-    border-radius:18px;
-    min-height:430px;
+    border-radius:20px;
+    overflow:hidden;
     display:flex;
-    flex-direction:column;
-    justify-content:center;
-    align-items:center;
-    text-align:center;
-    padding:40px;
+    height:100%;
 }
 
-.image-placeholder h3{
-    font-family:"Cormorant Garamond",serif;
-    font-size:2rem;
-    color:var(--primary);
-    margin-bottom:15px;
+.image-placeholder img{
+    width:100%;
+    height:100%;
+    display:block;
+    object-fit:cover;
+    object-position:center top;
 }
-
 /* =========================
    SECTIONS
 ========================= */
@@ -270,7 +265,7 @@ section{
     display:grid;
     grid-template-columns:1fr 1fr;
     gap:80px;
-    align-items:center;
+    align-items:stretch;
 }
 
 .about-content p{
@@ -433,8 +428,24 @@ footer p{
     resize:vertical;
     min-height:180px;
 }.logo img{
-    height:80px;
+    height:82px;
     width:auto;
     display:block;
     transition:transform .3s ease;
+}
+.logo-showcase{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    background:var(--light);
+    border:1px solid var(--border);
+    border-radius:20px;
+    padding:60px 40px;
+}
+
+.logo-showcase img{
+    width:100%;
+    max-width:320px;
+    height:auto;
+    display:block;
 }
