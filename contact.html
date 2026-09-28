@@ -74,19 +74,19 @@ Whether you need help optimising your Google Business Profile or simply want som
 
 <h2>Send an Enquiry</h2>
 
-<form class="contact-form">
+<form class="contact-form" action="https://formspree.io/f/meaopdla" method="POST">
 
-<input type="text" placeholder="Your Name" required>
+    <input type="text" name="name" placeholder="Your Name" required>
 
-<input type="email" placeholder="Email Address" required>
+    <input type="email" name="email" placeholder="Email Address" required>
 
-<input type="text" placeholder="Business Name">
+    <input type="text" name="business" placeholder="Business Name">
 
-<textarea rows="6" placeholder="Tell us about your business and how we can help..."></textarea>
+    <textarea name="message" placeholder="Tell me a little about your business and what you'd like help with..." required></textarea>
 
-<button class="btn btn-primary" type="submit">
-Send Enquiry
-</button>
+    <button type="submit" class="btn btn-primary">
+        Send Enquiry
+    </button>
 
 </form>
 
@@ -96,7 +96,7 @@ Send Enquiry
 
 <h2>Contact Information</h2>
 
-<p><strong>Email</strong><br>hello@gjpdigital.com.au</p>
+<p><strong>Email</strong><br>gjpdigital@gmail.com</p>
 
 <br>
 
